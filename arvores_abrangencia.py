@@ -129,18 +129,18 @@ def get_abrangente(G):
     print_graphs(all_abr)
     print_main_graphs(G, G_abr)
 
-
-G = nx.Graph()
-
-
-G.add_edge("A", "B")
-G.add_edge("A", "C")
-G.add_edge("C", "B")
-G.add_edge("D", "E")
-G.add_edge("C", "E")
-G.add_edge("D", "B")
+if __name__ == "__main__":
+    G = nx.Graph()
 
 
-get_abrangente(G)
+    G.add_edge("A", "B")
+    G.add_edge("A", "C")
+    G.add_edge("C", "B")
+    G.add_edge("D", "E")
+    G.add_edge("C", "E")
+    G.add_edge("D", "B")
+
+
+    get_abrangente(G)
 
 
